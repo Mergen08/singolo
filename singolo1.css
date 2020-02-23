@@ -80,7 +80,7 @@ div.vPhone{
     margin-left:50px;
     width:240px;
     height:480px;
-    background-image:url("assets/image/verticalphone/Shadow.png");
+    background-image:url("assets/image/Shadow.png");
     padding:0px;
 }
 .vDisplay{
@@ -88,7 +88,7 @@ div.vPhone{
     margin-left:-2px;
     width:218px;
     height:460px;
-    background-image:url("assets/image/verticalphone/Base.png");
+    background-image:url("assets/image/Base.png");
     padding:0px;
     border:1px white solid ;
     border-color:transparent;
@@ -98,7 +98,7 @@ div.vPhone{
     margin-left:2px;
     width:317px;
     height:450px;
-    background-image:url("assets/image/verticalphone/Screen.png");
+    background-image:url("assets/image/Screen.png");
     background-repeat: no-repeat;
     background-position: 11px 60px;  
     border:1px white solid ;
@@ -109,7 +109,7 @@ div.vPhone{
     margin-left: 100px;
     width: 11px;
     height: 11px;
-    background-image:url("assets/image/verticalphone/Cam.png");
+    background-image:url("assets/image/Cam.png");
     background-repeat: no-repeat;
 }
 .picture{
@@ -117,7 +117,7 @@ div.vPhone{
     margin-left:14px;
     width:188px;
     height:333px;
-    background-image:url("assets/image/verticalphone/Layer\ 6.png");
+    background-image:url("assets/image/Layer\ 6.png");
     background-repeat: no-repeat;
     background-position: -15px -135px;
 }
@@ -126,7 +126,7 @@ div.vPhone{
     margin-left:86px;
     width:46px;
     height:46px;
-    background-image:url("assets/image/verticalphone/Home\ Button.png");
+    background-image:url("assets/image/Home\ Button.png");
     background-repeat: no-repeat;
     
     border-radius: 50%;
@@ -140,7 +140,7 @@ div.speaker{
     margin-left: 90px;
     width: 40px;
     height: 7px;
-    background-image:url("assets/image/verticalphone/Speaker.png");
+    background-image:url("assets/image/Speaker.png");
     background-repeat: no-repeat;
 }
 div.hPhone{
@@ -148,7 +148,7 @@ div.hPhone{
     margin-left:15px;
     width:600px;
     height:400px;
-    background-image:url("assets/image/horisontalphone/iPhone\ Horizontal.png");    
+    background-image:url("assets/image/iPhone\ Horizontal.png");    
 }
 div.right{
     margin-top: 281px;
