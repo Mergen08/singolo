@@ -230,3 +230,8 @@ article img{
 .footer article:nth-of-type(4){
     margin-left: 10px;
  }
+.bottomStr{
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+}
