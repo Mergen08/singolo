@@ -1,0 +1,232 @@
+@font-face {
+    font-family: Lato; /* Имя шрифта */
+    src: url(assets/Lato-Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+body{
+    width:1020px;
+    background-color:green;
+}
+header div{
+    width: 1020px;
+    height: 89px;
+    background-color: #2d303a;
+    display: flex;
+    justify-content: space-between;
+}
+div h1{
+    font-size: 24px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    margin-top:43px;
+    margin-left: 42px;
+}
+div h1 span{
+    color: #f06c64;
+}
+div ul{
+    align-items: flex-end;
+    margin-top:40px;
+    margin-right: 40px;
+    
+}
+div ul li{
+    font-size: 12px;
+    line-height: 6px;
+    color:#ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    display: inline;
+    margin-left: 10px;
+    padding-left:14px ;
+}
+div ul li:nth-child(1){
+    color: #f06c64;
+}
+.straight{
+    align-items:center;
+    width: 1020px;
+    height: 6px;
+    background-color:#323746;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+a:hover{
+    cursor:pointer;
+}
+main{
+    width: 1020px;
+    height: 594px;
+    background-color: #f06c64;
+    display: flex;
+}
+div.left{
+    margin-top: 281px;
+    margin-left:42px;
+    width:16px;
+    height:27px;
+    background-image:url("assets/image/left.png");
+}
+div.left:hover{
+    background-image:url("assets/image/leftactive.png");
+}
+div.vPhone{
+    margin-top:53px;
+    margin-left:50px;
+    width:240px;
+    height:480px;
+    background-image:url("assets/image/verticalphone/Shadow.png");
+    padding:0px;
+}
+.vDisplay{
+    margin-top:-1px;
+    margin-left:-2px;
+    width:218px;
+    height:460px;
+    background-image:url("assets/image/verticalphone/Base.png");
+    padding:0px;
+    border:1px white solid ;
+    border-color:transparent;
+}
+.csreen{
+    margin-top:3px;
+    margin-left:2px;
+    width:317px;
+    height:450px;
+    background-image:url("assets/image/verticalphone/Screen.png");
+    background-repeat: no-repeat;
+    background-position: 11px 60px;  
+    border:1px white solid ;
+    border-color:transparent;
+}
+.cam{
+    margin-top: -440px;
+    margin-left: 100px;
+    width: 11px;
+    height: 11px;
+    background-image:url("assets/image/verticalphone/Cam.png");
+    background-repeat: no-repeat;
+}
+.picture{
+    margin-top:63px;
+    margin-left:14px;
+    width:188px;
+    height:333px;
+    background-image:url("assets/image/verticalphone/Layer\ 6.png");
+    background-repeat: no-repeat;
+    background-position: -15px -135px;
+}
+.homeButton{
+    margin-top:8px;
+    margin-left:86px;
+    width:46px;
+    height:46px;
+    background-image:url("assets/image/verticalphone/Home\ Button.png");
+    background-repeat: no-repeat;
+    
+    border-radius: 50%;
+}
+div.homeButton:hover{
+    border:1px #c7c7c7 solid;
+    cursor: pointer;
+}
+div.speaker{
+    margin-top: 10px;
+    margin-left: 90px;
+    width: 40px;
+    height: 7px;
+    background-image:url("assets/image/verticalphone/Speaker.png");
+    background-repeat: no-repeat;
+}
+div.hPhone{
+    margin-top:72px;
+    margin-left:15px;
+    width:600px;
+    height:400px;
+    background-image:url("assets/image/horisontalphone/iPhone\ Horizontal.png");    
+}
+div.right{
+    margin-top: 281px;
+    margin-left:2px;
+    width:16px;
+    height:27px;
+    background-image:url("assets/image/right.png");
+}
+div.right:hover{
+    background-image:url("assets/image/rightactive.png");
+}
+.straightMain{
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+section.footer{
+    width: 1020px;
+    height: 495px;
+    background-color: #f2f2f2;  
+}
+.footer h2{
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 0;
+    padding-top:60px;
+    
+}
+.footer p{
+    width: 950px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 0px;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    flex-basis: 300px;
+}
+article img{
+    float:left;
+    margin:30px;
+    height:50px;
+}
+.flexbox article:nth-of-type(1){
+    margin-left: 10px;
+    }
+.flexbox article h3{
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding-top: 10px;
+    
+}
+.flexbox article p{
+    width:290px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+.footer article:nth-of-type(4){
+    margin-left: 10px;
+ }
