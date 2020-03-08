@@ -1,2 +1,181 @@
+:root {
+  --orange: #f06c64;
+  --darkorange: #ea676b;
+  --formwhite: #f0d8d9;
+  --darkblue: #2d303a;
+  --crblue: #484c5f;
+  --inputorange: #d6564f;
+  --placeholderorange: #f48c8f;
+  --textdarkblue: #666d89;
+}
 
-Hello
+@font-face {
+  font-family: "Lato Black";
+  src: url("assets/fonts/Lato-Black.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/fonts/Lato-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Lato Light";
+  src: url("assets/fonts/Lato-Light.ttf") format("opentype");
+}
+
+body {
+  margin: auto;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Lato";
+}
+
+.form {
+  max-height: 648px;
+  background-color: var(--orange);
+  border-bottom: 6px solid var(--darkorange);
+}
+
+.container {
+  max-width: 940px;
+  min-height: inherit;
+  margin: 0 auto;
+}
+
+.inputs-contacts {
+  display: flex;
+}
+
+.form h2 {
+  margin-top: 0;
+  margin-bottom: 27px;
+  padding-top: 68px;
+  font-family: "Lato Black";
+  font-size: 2.5em;
+  letter-spacing: -0.005em;
+  color: var(--formwhite);
+}
+
+.form > .container > p {
+  margin-top: 27px;
+  margin-bottom: 44px;
+  font-family: "Lato Light";
+  font-size: 1.5em;
+  line-height: 1.67em;
+  color: var(--formwhite);
+}
+
+.form .container form {
+  display: flex;
+  flex-direction: column;
+  min-width: 619px;
+}
+
+.inputs {
+  min-height: 36px;
+  margin-bottom: 16px;
+  background-color: var(--inputorange);
+  border-radius: 5px;
+  border: none;
+  font-family: "Lato";
+  font-size: 1em;
+  text-indent: 15px;
+  color: var(--placeholderorange);
+  outline: none;
+}
+
+.inputs::placeholder {
+  color: var(--placeholderorange);
+}
+
+input:required:invalid:focus {
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 190px;
+  resize: none;
+  padding-top: 10px;
+}
+
+.contacts {
+  box-sizing: border-box;
+  min-width: 321px;
+  padding-left: 21px;
+  color: var(--formwhite);
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: "Lato Black";
+  font-size: 1.5em;
+  letter-spacing: -0.005em;
+}
+
+h3 + p {
+  margin-top: 10px;
+  line-height: 1.83em;
+}
+
+.links {
+  margin: 25px 3px;
+  margin-left: 0px;
+  padding-left: 0px;
+  line-height: 1.8em;
+}
+
+.links > img {
+  margin-left: 3px;
+  margin-right: 13px;
+}
+
+.email {
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+.phone {
+  margin-left: 1px;
+  margin-right: 11px;
+}
+
+.links a {
+  margin-left: 0px;
+  font-family: "Lato";
+  color: var(--formwhite);
+  text-decoration: none;
+}
+
+p {
+  overflow: hidden;
+  text-transform: clip;
+  text-align: justify;
+}
+
+footer {
+  min-height: 76px;
+  background-color: var(--darkblue);
+}
+
+footer > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  color: var(--textdarkblue)
+}
+
+footer img {
+  margin-left: 4px;
+  margin-top: 4px;
+}
+
+footer img:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 3px 4px var(--darkorange));
+}
