@@ -2,18 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="singolo.css">
-    <title>Singolo0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Singolo</title>
   </head>
   <body>
+    <div class="window-blur display-none" id="blur"></div>
     <header>
       <div class="container">
+        <button class="main-menu-button" id="main-menu-button"><img src="assets/responsive/burger-menu-icon.png" alt=""></button>
         <h1>
           SINGOLO<span>*</span>
         </h1>
-        <nav class="main-nav">
+        <nav class="main-nav" id='main-menu'>
           <ul>
-            <li><a href="#home" class="active-main decoration-none nav-link">HOME</a></li>
+            <li><a href="#home" class="decoration-none nav-link active-main">HOME</a></li>
             <li><a href="#services" class="decoration-none nav-link">SERVICES</a></li>
             <li><a href="#portfolio" class="decoration-none nav-link">PORTFOLIO</a></li>
             <li><a href="#about" class="decoration-none nav-link">ABOUT</a></li>
@@ -22,22 +25,32 @@
         </nav>
       </div>
     </header>
-    <section class="slider">
-      <div class="container">
-        <h2>Slider</h2>
-        <button class="slider-button"><img src="assets/image/leftarrow.png" alt="" width="16" height="27"></button>
-        <div class="slider-images">
-          <img class="iphone-vertical pos-absolute" src="assets/image/Iphone.png" alt="" width="216" height="459">
-          <img class="screen-vertical pos-absolute" src="assets/image/ScreenVert.png" alt="" width="194" height="339">
-          <img class="shadow-vertical pos-absolute" src="assets/image/Shadow.png" alt="" width="240" height="483">
-          <img class="iphone-horizontal pos-absolute" src="assets/image/IphoneHor.png" alt="" width="459" height="216">
-          <img class="screen-horizontal pos-absolute" src="assets/image/ScreenHor.png" alt="" width="339" height="194">
-          <img class="shadow-horizontal pos-absolute" src="assets/image/ShadowHor.png" alt="" width="483" height="240">
+    <div class="empty-header display-none"></div>
+    <section class="slider" id="home">
+      <h2 class="display-none">Slider</h2>
+      <div class="sliderwrapper">
+        <div class="slide-1 active-slide" id="slide-1">
+          <div class="container">
+            <img class="iphone-vertical pos-absolute" src="assets/Iphone.png" alt="" id='iphone-vert'>
+            <img class="screen-vertical pos-absolute fade" src="assets/ScreenVert.png" alt="" id='screen-vert'>
+            <img class="shadow-vertical pos-absolute" src="assets/Shadow.png" alt="">
+            <img class="iphone-horizontal pos-absolute" src="assets/IphoneHor.png" alt="" id='iphone-hor'>
+            <img class="screen-horizontal pos-absolute fade" src="assets/ScreenHor.png" alt="" id='screen-hor'>
+            <img class="shadow-horizontal pos-absolute" src="assets/ShadowHor.png" alt="">
+          </div>
         </div>
-        <button class="slider-button"><img src="assets/image/rightarrow.png" alt="" width="16" height="27"></button>
+        <div class="slide-2 non-active-slide" id="slide-2">
+          <div class="container">
+            <img src="assets/slide2/Slider-2.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <button class="slider-button" id="left-slider-button"><img src="assets/leftarrow.png" alt="" width="16" height="27"></button>
+        <button class="slider-button" id="right-slider-button"><img src="assets/rightarrow.png" alt="" width="16" height="27"></button>
       </div>
     </section>
-    <section class="our-services">
+    <section class="our-services" id='services'>
       <div class="container">
         <h2>Our Services</h2>
         <p class="section-par">
@@ -45,44 +58,44 @@
           Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
         </p>
-        <div class="three-columns">
+        <div class="columns-layout">
           <div>
-            <img src="assets/image/pen.svg" alt="" width="59" height="59">
+            <img src="assets/pen.svg" alt="" width="59" height="59">
             <div class="textblock">
               <h3>Custom Design</h3>
               <p class="overflow-clip">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
             </div>
           </div>
           <div>
-            <img src="assets/image/bulb.svg" alt="" width="59" height="59">
+            <img src="assets/bulb.svg" alt="" width="59" height="59">
             <div class="textblock"> 
               <h3>Inovative Ideas</h3>
               <p class="overflow-clip">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
             </div>
           </div>
           <div>
-            <img src="assets/image/heart.svg" alt="" width="59" height="59">
+            <img src="assets/heart.svg" alt="" width="59" height="59">
             <div class="textblock">
               <h3>Love Is The Answer</h3>
               <p class="overflow-clip">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
             </div>
           </div>
           <div>
-            <img src="assets/image/phone.svg" alt="" width="59" height="59">
+            <img src="assets/phone.svg" alt="" width="59" height="59">
             <div class="textblock">
               <h3>Responsive Layout</h3>
               <p class="overflow-clip">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
             </div>
           </div>
           <div>
-            <img src="assets/image/bubble.svg" alt="" width="59" height="59">
+            <img src="assets/bubble.svg" alt="" width="59" height="59">
             <div class="textblock">
               <h3>24 / 7 Support</h3>
               <p class="overflow-clip">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
             </div>
           </div>
           <div>
-            <img src="assets/image/star.svg" alt="" width="59" height="59">
+            <img src="assets/star.svg" alt="" width="59" height="59">
             <div class="textblock">
               <h3>Feel Like A Star</h3>
               <p class="overflow-clip">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
@@ -91,45 +104,43 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio"  id='portfolio'>
       <div class="container">
         <h2>Portfolio</h2>
         <p class="section-par">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        <nav class="portfolio-nav">
+        <nav class="portfolio-nav" id='portfolio-menu'>
           <ul>
             <li>
-              <button class="portfolio-button active-button all-button">All</button>
+              <button class="portfolio-button active-button all-button" id="all-btn">All</button>
             </li>
             <li>
-              <button class="portfolio-button webdesign-button">Web Design</button>
+              <button class="portfolio-button webdesign-button" id="web-btn">Web Design</button>
             </li>
             <li>
-              <button class="portfolio-button graphic-button">Graphic Design</button>
+              <button class="portfolio-button graphic-button" id="grp-btn">Graphic Design</button>
             </li>
             <li>
-              <button class="portfolio-button artwork-button">Artwork</button>
+              <button class="portfolio-button artwork-button" id="art-btn">Artwork</button>
             </li>
           </ul>
         </nav>
-        <div class="img-grid">
-          <img src="assets/portfolio/img1.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img2.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img3.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img4.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img5.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img6.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img7.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img8.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img9.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img10.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img11.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img12.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img12.png" alt="" width="220" height="187">
-          <img src="assets/portfolio/img12.png" alt="" width="220" height="187">
+        <div class="img-grid" id="img-gr">
+          <img class="fade" src="assets/portfolio/img1.png" alt="">
+          <img class="fade" src="assets/portfolio/img2.png" alt="">
+          <img class="fade" src="assets/portfolio/img3.png" alt="">
+          <img class="fade" src="assets/portfolio/img4.png" alt="">
+          <img class="fade" src="assets/portfolio/img5.png" alt="">
+          <img class="fade" src="assets/portfolio/img6.png" alt="">
+          <img class="fade" src="assets/portfolio/img7.png" alt="">
+          <img class="fade" src="assets/portfolio/img8.png" alt="">
+          <img class="fade" src="assets/portfolio/img9.png" alt="">
+          <img class="fade" src="assets/portfolio/img10.png" alt="">
+          <img class="fade" src="assets/portfolio/img11.png" alt="">
+          <img class="fade" src="assets/portfolio/img12.png" alt="">
         </div>
       </div> 
     </section>
-    <section class="about-us">
+    <section class="about-us" id='about'>
       <div class="container">
         <h2>About Us</h2>
         <p class="section-par">
@@ -138,9 +149,9 @@
           lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, 
           tortor mauris condimentum nibh.
         </p>
-        <div class="three-columns">
+        <div class="columns-layout">
           <div>
-            <img src="assets/aboutus/photo-1.png" alt="" width="300" height="300">
+            <img src="assets/aboutus/photo-1.png" alt="">
             <h3 class="text-ellip">Adam Jensen</h3>
             <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
             <div>
@@ -151,7 +162,7 @@
             </div>
           </div>
           <div>
-            <img src="assets/aboutus/photo-2.png" alt="" width="300" height="300">
+            <img src="assets/aboutus/photo-2.png" alt="">
             <h3 class="text-ellip">Desmond Miles</h3>
             <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
             <div>
@@ -162,7 +173,7 @@
             </div>
           </div>
           <div>
-            <img src="assets/aboutus/photo-3.png" alt="" width="300" height="300">
+            <img src="assets/aboutus/photo-3.png" alt="">
             <h3 class="text-ellip">Scolara Visari</h3>
             <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
             <div>
@@ -175,7 +186,7 @@
         </div>
       </div>
     </section>
-    <section class="get-quote">
+    <section class="get-quote" id='contact'>
       <div class="container">
         <h2>Get a Quote</h2>
         <p class="section-par">
@@ -184,12 +195,12 @@
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
         </p>
         <div class="inputs-contacts">
-          <form action="#" method="POST" target="_blank">
+          <form id="myform">
             <input class="inputs" name="name" type="text" placeholder="Name (Required)" required>
             <input class="inputs" name="email" type="email" placeholder="Email (Required)" required>
-            <input class="inputs" name="subject" type="text" placeholder="Subject">
-            <textarea class="inputs" name="describe" rows="12" cols="50" placeholder="Describe your project in detail..."></textarea>
-            <input class="inputs" name="Submit" type="submit" value="Submit">
+            <input class="inputs" name="subject" type="text" placeholder="Subject" id="text-subject">
+            <textarea class="inputs" name="describe" rows="12" cols="50" maxlength="1000"  placeholder="Describe your project in detail..." id="text-describe"></textarea>
+            <input class="inputs" name="Submit" type="submit" value="SUBMIT" id="btn-submit">
           </form>
           <div class="contacts">
             <h3>Contact information</h3>
@@ -207,14 +218,21 @@
     </section>
     <footer>
       <div class="container">
-        <p>© Copyright 2013 · by PSDchat.com</p>
-        <div>
+        <p>© Copyright 2013</p>
+        <div class="social-img-block">
           <img src="assets/aboutus/facebook.svg" alt="" width="33" height="34">
           <img src="assets/aboutus/google+.svg" alt="" width="33" height="34">
           <img src="assets/aboutus/twitter.svg" alt="" width="33" height="34">
           <img src="assets/aboutus/linkedin.svg" alt="" width="33" height="34">
         </div>  
       </div>
+      <div class='message-block display-none' id="message">
+        <div>
+          <p class="section-par"></p>
+          <button class="inputs" id="ok">OK</button>
+        </div>
+      </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
